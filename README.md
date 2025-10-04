@@ -19,7 +19,7 @@ Songle API v1 のための Python クライアントライブラリ
 現在、このライブラリはPyPIに登録されていません。GitHubリポジトリから直接インストールしてください。  
   
 ```bash  
-pip install git+[https://github.com/](https://github.com/)Shinh0707/songle-python.git  
+pip install git+https://github.com/Shinh0707/songle-python.git  
 ````  
   
 ## サンプルコード  
