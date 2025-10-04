@@ -10,7 +10,7 @@ Songle API v1 のための Python クライアントライブラリ
   
 これは、楽曲のメタデータや音楽地図情報（拍、コード、メロディ、サビ区間など）を取得するためのインタフェースを提供する、非公式ライブラリです。
   
-本ライブラリは以下のAPIを利用しています。  
+本ライブラリは Songle Rest API を利用しています。  
 -   **Songle API**: https://api.songle.jp/  
 -   **Songle Widget API**: https://widget.songle.jp/docs/v1   
   
