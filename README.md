@@ -24,6 +24,7 @@ pip install git+https://github.com/Shinh0707/songle-python.git
   
 ## サンプルコード  
 [example.py](example.py)  
+[Tell Your World](https://www.youtube.com/watch?v=PqJNc9KVIZE)でリクエストする例  
   
 ```python  
 from songle import Songle, SongleApiException  
@@ -32,7 +33,7 @@ from songle import Songle, SongleApiException
 client = Songle()  
   
 # 解析したい楽曲のURL  
-song_url = "[www.youtube.com/watch?v=PqJNc9KVIZE](https://www.youtube.com/watch?v=PqJNc9KVIZE)"  
+song_url = "www.youtube.com/watch?v=PqJNc9KVIZE"  
   
 try:  
   # 1. 楽曲情報を取得  
