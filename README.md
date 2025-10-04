@@ -6,28 +6,13 @@
   
 [![Python 3.13+](https://img.shields.io/badge/python-3.13+-blue.svg)](https://www.python.org/downloads/)  
   
----  
-  
 Songle API v1 のための Python クライアントライブラリ  
   
-これは、楽曲のメタデータや音楽地図情報（拍、コード、メロディ、サビ区間など）を取得するためのインタフェースを提供する、非公式ライブラリです。APIレスポンスを型付けされたオブジェクトにパースします。  
+これは、楽曲のメタデータや音楽地図情報（拍、コード、メロディ、サビ区間など）を取得するためのインタフェースを提供する、非公式ライブラリです。
   
 本ライブラリは以下のAPIを利用しています。  
 -   **Songle API**: https://api.songle.jp/  
--   **Songle Widget API**: https://widget.songle.jp/docs/v1  
-  
----  
-  
-## 主な機能  
-  
--   楽曲の基本情報取得  
--   拍、コード、メロディ、サビ区間の音楽地図取得  
--   各音楽地図のバージョン履歴取得  
--   楽曲のキーワード検索  
--   すべてのAPIレスポンスを `dataclass` オブジェクトとして返却  
--   `requests` をベースとしたHTTPクライアント  
-  
----  
+-   **Songle Widget API**: https://widget.songle.jp/docs/v1   
   
 ## インストール  
   
@@ -37,11 +22,8 @@ Songle API v1 のための Python クライアントライブラリ
 pip install git+[https://github.com/](https://github.com/)Shinh0707/songle-python.git  
 ````  
   
------  
-  
-## 使い方  
-  
-以下は、基本的な使用方法を示すサンプルコードです。([example.py](example.py))  
+## サンプルコード  
+[example.py](example.py)  
   
 ```python  
 from songle import Songle, SongleApiException  
@@ -91,11 +73,9 @@ except SongleApiException as e:
   
 ```  
   
------  
-  
 ## APIリファレンス  
   
-`Songle` クラスは以下のメソッドを提供します。  
+`Songle`クラス  
   
 ### 楽曲情報  
   
@@ -121,8 +101,6 @@ except SongleApiException as e:
   - `get_chord_revisions(url: str) -> list[Revision]`  
   - `get_melody_revisions(url: str) -> list[Revision]`  
   - `get_chorus_revisions(url: str) -> list[Revision]`  
-  
------  
   
 ## データモデル  
   
